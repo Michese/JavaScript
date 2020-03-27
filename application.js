@@ -92,32 +92,53 @@
 
 // Задание 5
 
-/**
- * Функция возращает результат одной из
- * четырех бинарных операций: суммы, разности, умножения, деления.
- * @param {number} arg1 первый операнд
- * @param {number} arg2 второй операнд
- * @param {string} operation наименование операции
- * @returns {number}
- */
-function mathOperation(arg1, arg2, operation) {
-    switch (operation) {
-        case "summ":
-            return arg1 + arg2;
-        case "diff":
-            return arg1 - arg2;
-        case "comp":
-            return arg1 * arg2;
-        case "div":
-            return arg1 / arg2;
-        default:
-            throw new UserException("Неверно указано название операции");
-    }
-}
+// /**
+//  * Функция возращает результат одной из
+//  * четырех бинарных операций: суммы, разности, умножения, деления.
+//  * @param {number} arg1 первый операнд
+//  * @param {number} arg2 второй операнд
+//  * @param {string} operation наименование операции
+//  * @returns {number}
+//  */
+// function mathOperation(arg1, arg2, operation) {
+//     switch (operation) {
+//         case "summ":
+//             return arg1 + arg2;
+//         case "diff":
+//             return arg1 - arg2;
+//         case "comp":
+//             return arg1 * arg2;
+//         case "div":
+//             return arg1 / arg2;
+//         default:
+//             throw new UserException("Неверно указано название операции");
+//     }
+// }
+//
+// let a = 4, b = 1;
+// console.log(mathOperation(a,b,"summ"));
+// console.log(mathOperation(a,b,"diff"));
+// console.log(mathOperation(a,b,"comp"));
+// console.log(mathOperation(a,b,"div"));
+// console.log(mathOperation(a,b,"abracadabra"));
 
-let a = 4, b = 1;
-console.log(mathOperation(a,b,"summ"));
-console.log(mathOperation(a,b,"diff"));
-console.log(mathOperation(a,b,"comp"));
-console.log(mathOperation(a,b,"div"));
-console.log(mathOperation(a,b,"abracadabra"));
+// Задание 6
+
+let money = +prompt("Какое кол-во денег вы хотите положить в банк?");
+if (isNaN(money)) {
+    alert("Вы ввели не корректное значение!");
+} else if (money == 0) {
+    alert("Вы не хотите положить деньги в банк");
+} else {
+    let ending = "";
+    if (money % 100 >= 11 && money % 100 <= 19) {
+        ending = "ей";
+    } else if (money % 10 == 1) {
+        ending = "ь";
+    } else if (money % 10 >= 2 && money % 10 <= 4) {
+        ending = "я";
+    } else if (money == 0 || (money % 10 >= 5 && money % 10 <= 9)) {
+        ending = "ей";
+    }
+    alert(`Ваша сумма в ${money} рубл${ending} успешно зачислена.`);
+}
