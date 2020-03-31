@@ -1,3 +1,4 @@
+'use strict';
 const post = {
     author: "John", //вывести этот текст
     postId: 23,
@@ -20,8 +21,9 @@ const post = {
             }
         },
     ]
-}
+};
 //Задание 3
+console.log("Задание 3");
 console.log(post.author);
 console.log(post.comments[0].rating.dislikes);
 console.log(post.comments[1].userId);

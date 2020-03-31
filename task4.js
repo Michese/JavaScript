@@ -13,7 +13,8 @@ const products = [{
     },
 ];
 // Задание 4
+console.log("Задание 4");
 let discount = function (product) {
     product.price = Math.round(product.price * 1.15);
-}
+};
 products.forEach(discount);
