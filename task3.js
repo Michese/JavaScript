@@ -2,7 +2,8 @@
 const post = {
     author: "John", //вывести этот текст
     postId: 23,
-    comments: [{
+    comments: [
+        {
             userId: 10,
             userName: "Alex",
             text: "lorem ipsum",
