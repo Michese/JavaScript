@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script defer src="application.js"></script>
+    <script defer src="task1.js"></script>
+    <script defer src="task2.js"></script>
+    <script defer src="task3.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9147614acd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <!--    <script src="https://kit.fontawesome.com/9147614acd.js" crossorigin="anonymous"></script>-->
     <title>JavaScript</title>
 </head>
-<body>
 
+<body>
+<h2 class="h2">Задание 2.1</h2>
+<div class="slider">
+    <div class="item">
+        <img src="image/slide1.jpg" alt="Первый слайд">
+        <div class="slideText">Заголовок слайда 1</div>
+    </div>
+
+    <div class="item">
+        <img src="image/slide2.jpg" alt="Второй слайд">
+        <div class="slideText">Заголовок слайда 2</div>
+    </div>
+
+    <div class="item">
+        <img src="image/slide3.jpg" alt="Третий слайд">
+        <div class="slideText">Заголовок слайда 3</div>
+    </div>
+
+    <div class="item">
+        <img src="image/slide4.jpg" alt="Четвертый слайд">
+        <div class="slideText">Заголовок слайда 4</div>
+    </div>
+
+    <a class="prev" onclick="minusSlide()">&#10094;</a>
+    <a class="next" onclick="plusSlide()">&#10095;</a>
+</div>
+<h2 class="h2">Задание 3</h2>
+<center>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            Корзина
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Цена</th>
+                    <th scope="col">Количество</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="2" scope="row">Итого:</th>
+                    <td colspan="3">
+                        <span class="total">0</span>
+                        <i class="fas fa-ruble-sign"></i>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</center>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h3 class="product__name">Товар 1</h3>
+            <img src="image/slide1.jpg" alt="" class="product__image">
+            <p class="product__price">20$</p>
+            <button type="button" class="product__button" data-id="1" data-price="20" data-name="Товар 1">В корзину</button>
+        </div>
+        <div class="col-sm">
+            <h3 class="product__name">Товар 2</h3>
+            <img src="image/slide2.jpg" alt="" class="product__image">
+            <p class="product__price">30$</p>
+            <button type="button" class="product__button" data-id="2" data-price="30" data-name="Товар 2">В корзину</button>
+        </div>
+        <div class="col-sm">
+            <h3 class="product__name">Товар 3</h3>
+            <img src="image/slide3.jpg" alt="" class="product__image">
+            <p class="product__price">25$</p>
+            <button type="button" class="product__button" data-id="3" data-price="25" data-name="Товар 3">В корзину</button>
+        </div>
+        <div class="col-sm">
+            <h3 class="product__name">Товар 4</h3>
+            <img src="image/slide4.jpg" alt="" class="product__image">
+            <p class="product__price">15$</p>
+            <button type="button" class="product__button" data-id="4" data-price="15" data-name="Товар 4">В корзину</button>
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
