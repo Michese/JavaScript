@@ -108,3 +108,29 @@
         opacity: 1
     }
 }
+
+.container {
+    margin-top: 30px;
+}
+
+.product__name {
+    margin-bottom: 20px;
+}
+
+.product__image {
+    height: 300px;
+}
+.product__price {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.product__button {
+    margin-bottom: 20px;
+}
+
+.productRemoveBtn {
+    cursor: pointer;
+}
